@@ -11,6 +11,7 @@ public class CreateProjectEndpoint : IEndpoint
         => endpoints.MapPost("/", HandleAsync)
             .WithName("Projects: Create")
             .WithDescription("Creates a new project.")
+            .WithOrder(3)
             .Produces<Project?>();
 
     private static async Task<IResult> HandleAsync(

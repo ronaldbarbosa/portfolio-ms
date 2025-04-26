@@ -10,6 +10,7 @@ public class GetProjectByIdEndpoint : IEndpoint
         => endpoints.MapGet("/{id:guid}", HandleAsync)
             .WithName("Projects: Get by id")
             .WithDescription("Gets a project by id.")
+            .WithOrder(2)
             .Produces<Project?>();
 
     private static async Task<IResult> HandleAsync([FromServices] IProjectHandler projectHandler, [FromRoute] Guid id)

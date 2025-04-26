@@ -15,7 +15,8 @@ public static class Endpoint
         endpoints.MapGroup("/projects")
             .WithTags("Projects")
             .MapEndpoint<GetProjectByIdEndpoint>()
-            .MapEndpoint<CreateProjectEndpoint>();
+            .MapEndpoint<CreateProjectEndpoint>()
+            .MapEndpoint<GetAllProjectsEndpoint>();
     }
 
     private static IEndpointRouteBuilder MapEndpoint<TEndpoint>(this IEndpointRouteBuilder endpoints)

@@ -9,18 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401a2970-4726-4bc1-9691-be02c5b46bf1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/DTOs/CreateProjectRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Data/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Data/EntityTypeConfigurations/ProjectConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Endpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/IEndpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/CreateProjectEndpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/GetProjectByIdEndpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Handlers/Implementations/ProjectHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Handlers/Interfaces/IProjectHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-ms/Models/Project.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/GetAllProjectsEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.portfolio-ms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.portfolio-ms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/Endpoints/Endpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Endpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/CreateProjectEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/CreateProjectEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/GetProjectByIdEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/Endpoints/Projects/GetProjectByIdEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/Handlers/Implementations/ProjectHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/Handlers/Implementations/ProjectHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/Handlers/Interfaces/IProjectHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/Handlers/Interfaces/IProjectHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-ms/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-ms/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +29,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ronaldbarbosa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ronaldbarbosa/portfolio-ms.git",
+    "accountId": "479086c0-cd85-44d4-842c-814267c2e492"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b4cda67ce354f1fb8abfec2d518ece1ce9da91e86a63f73ef1a35a8eaa4/ScalarOptionsExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/ronald/RiderProjects/portfolio-ms/portfolio-ms/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 2
@@ -141,19 +151,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745680928128</updated>
-      <workItem from="1745680929763" duration="8514000" />
+      <workItem from="1745680929763" duration="11314000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
