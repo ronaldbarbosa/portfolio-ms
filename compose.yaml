@@ -1,0 +1,6 @@
+﻿services:
+  portfolio-ms:
+    image: portfolio-ms
+    build:
+      context: .
+      dockerfile: portfolio-ms/Dockerfile
