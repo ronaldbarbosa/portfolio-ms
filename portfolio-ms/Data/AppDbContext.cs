@@ -1,11 +1,20 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using portfolio_ms.Models;
 
 namespace portfolio_ms.Data;
 
-public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+public class AppDbContext(DbContextOptions<AppDbContext> options) : IdentityDbContext<User, 
+    IdentityRole<Guid>, 
+    Guid,
+    IdentityUserClaim<Guid>,
+    IdentityUserRole<Guid>,
+    IdentityUserLogin<Guid>,
+    IdentityRoleClaim<Guid>,
+    IdentityUserToken<Guid>>(options)
 {
-    public DbSet<Project> Projects { get; init; }
+    public DbSet<Project> Projects { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

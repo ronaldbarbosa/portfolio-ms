@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using portfolio_ms.Data;
 using portfolio_ms.Endpoints;
 using portfolio_ms.Handlers.Implementations;
 using portfolio_ms.Handlers.Interfaces;
+using portfolio_ms.Models;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services
+    .AddIdentity<User, IdentityRole<Guid>>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders()
+    .AddApiEndpoints();
 
 builder.Services.AddTransient<IProjectHandler, ProjectHandler>();
 
